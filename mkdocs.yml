@@ -41,6 +41,14 @@ nav:
     - Sector Files: controllers/sector-files.md
     - ATC Procedures: controllers/procedures.md
     - ATC Ratings: controllers/ratings.md
+  - Airports:
+    - Overview: airports/index.md
+    - EGLL - London Heathrow: airports/egll.md
+    - EGKK - London Gatwick: airports/egkk.md
+    - EGCC - Manchester: airports/egcc.md
+    - EGBB - Birmingham: airports/egbb.md
+    - EGPH - Edinburgh: airports/egph.md
+    - EGPF - Glasgow: airports/egpf.md
   - Network Rules:
     - Overview: network/index.md
     - General Rules: network/rules.md
