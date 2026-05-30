@@ -1,0 +1,69 @@
+site_name: SkyHigh Wiki
+site_description: The official documentation library for the SkyHigh aviation simulation network.
+site_url: https://thismightnotwork.github.io/SkyHigh-wiki
+
+theme:
+  name: material
+  logo: assets/logo.png
+  favicon: assets/logo.png
+  palette:
+    scheme: slate
+    primary: custom
+    accent: custom
+  font:
+    text: Inter
+    code: JetBrains Mono
+  features:
+    - navigation.instant
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
+extra_css:
+  - assets/extra.css
+
+nav:
+  - Home: index.md
+  - Pilots:
+    - Overview: pilots/index.md
+    - Getting Started: pilots/getting-started.md
+    - Flight Planning: pilots/flight-plans.md
+    - AI ATC: pilots/ai-atc.md
+    - Pilot Ratings: pilots/ratings.md
+  - Controllers:
+    - Overview: controllers/index.md
+    - Getting Started: controllers/getting-started.md
+    - Sector Files: controllers/sector-files.md
+    - ATC Procedures: controllers/procedures.md
+    - ATC Ratings: controllers/ratings.md
+  - Network Rules:
+    - Overview: network/index.md
+    - General Rules: network/rules.md
+    - Code of Conduct: network/conduct.md
+    - Event Rules: network/events.md
+  - Training:
+    - Overview: training/index.md
+    - Pilot Exams: training/pilot-exams.md
+    - ATC Exams: training/atc-exams.md
+    - Mentoring: training/mentoring.md
+  - Tools & Software:
+    - Overview: tools/index.md
+    - SkyTrack (Pilot Client): tools/skytrack.md
+    - ATC Client: tools/atc-client.md
+    - Charts & AIP: tools/charts.md
+  - Staff:
+    - Overview: staff/index.md
+    - NOP SOPs: staff/nop-sops.md
+    - Incident Handling: staff/incidents.md
+    - Web & Infrastructure: staff/web-infra.md
+  - Technical Reference:
+    - Overview: tech/index.md
+    - FSD Integration: tech/fsd-integration.md
+    - Mumble Voice: tech/mumble.md
+    - APIs & Webhooks: tech/apis.md
+    - Discord Integration: tech/discord.md

@@ -1,0 +1,92 @@
+/* ─── SkyHigh Wiki — visual theme ─────────────────────────────────────────── */
+
+:root {
+  --sh-bg:      #1e1f26;
+  --sh-surface: #282a33;
+  --sh-border:  rgba(255,255,255,0.08);
+  --sh-green:   #aef84d;
+  --sh-green-dk:#8cd93a;
+  --sh-text:    #e8e9f0;
+  --sh-muted:   #9a9caa;
+}
+
+/* Override Material palette with SkyHigh colours */
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color:        var(--sh-green);
+  --md-primary-fg-color--light: var(--sh-green-dk);
+  --md-primary-fg-color--dark:  var(--sh-green-dk);
+  --md-accent-fg-color:         var(--sh-green);
+  --md-default-bg-color:        var(--sh-bg);
+  --md-default-fg-color:        var(--sh-text);
+  --md-default-fg-color--light: var(--sh-muted);
+  --md-code-bg-color:           var(--sh-surface);
+  --md-typeset-a-color:         var(--sh-green);
+}
+
+/* Header bar */
+.md-header {
+  background: var(--sh-surface);
+  border-bottom: 1px solid var(--sh-border);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* Sidebar */
+.md-sidebar {
+  background: var(--sh-bg);
+}
+
+.md-nav__item--active > .md-nav__link {
+  color: var(--sh-green) !important;
+  font-weight: 700;
+}
+
+.md-nav__link:hover {
+  color: var(--sh-green);
+}
+
+/* Content area */
+.md-content {
+  background: var(--sh-bg);
+}
+
+/* Admonition / callout overrides */
+.md-typeset .admonition,
+.md-typeset details {
+  background: var(--sh-surface);
+  border-left: 4px solid var(--sh-green);
+  border-radius: 6px;
+}
+
+/* Code blocks */
+.md-typeset pre > code {
+  background: var(--sh-surface);
+  border: 1px solid var(--sh-border);
+  border-radius: 6px;
+}
+
+/* Tables */
+.md-typeset table:not([class]) th {
+  background: var(--sh-surface);
+  color: var(--sh-green);
+}
+
+.md-typeset table:not([class]) tr:nth-child(even) {
+  background: rgba(255,255,255,0.03);
+}
+
+/* Tab navigation active underline */
+.md-tabs__link--active,
+.md-tabs__link:hover {
+  color: var(--sh-green) !important;
+}
+
+/* Glass card style helper class */
+.sh-card {
+  background: rgba(40, 42, 51, 0.7);
+  border: 1px solid var(--sh-border);
+  border-radius: 10px;
+  padding: 1.2rem 1.5rem;
+  backdrop-filter: blur(8px);
+  margin-bottom: 1rem;
+}
