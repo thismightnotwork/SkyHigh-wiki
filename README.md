@@ -7,7 +7,7 @@ Built with [MkDocs](https://mkdocs.org) + [Material for MkDocs](https://squidfun
 ## Live site
 
 ```
-[Live Site](https://wiki.skyhighnetwork.co.uk/)
+https://wiki.skyhighnetwork.co.uk/
 ```
 
 ## Local development
