@@ -4,8 +4,8 @@ site_url: https://thismightnotwork.github.io/SkyHigh-wiki
 
 theme:
   name: material
-  logo: assets/logo.png
-  favicon: assets/logo.png
+  logo: assets/android-chrome-512x512.png
+  favicon: assets/favicon.ico
   palette:
     scheme: slate
     primary: custom
@@ -23,6 +23,11 @@ theme:
     - search.suggest
     - search.highlight
     - content.code.copy
+  icon:
+    logo: logo
+
+extra:
+  manifest: assets/site.webmanifest
 
 extra_css:
   - assets/extra.css
