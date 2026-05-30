@@ -1,16 +1,16 @@
 /* ═══════════════════════════════════════════════════════════════════
-   SkyHigh Wiki — Full visual theme matching temp.skyhighnetwork.co.uk
+   SkyHigh Wiki — Full visual theme matching skyhighnetwork.co.uk
    Fonts: Plus Jakarta Sans (headings) + Lexend (body) via Google Fonts
    Colour tokens lifted 1:1 from main site index.html
    ═══════════════════════════════════════════════════════════════════ */
 
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Lexend:wght@300;400;500;600;700&display=swap');
 
-/* ── Root design tokens ──────────────────────────────────────────── */
+/* ── Root design tokens (1:1 with main site :root) ───────────────── */
 :root {
   --c1:         #0f2535;
   --c2:         #25562d;
-  --c3:         #519855;   /* brand green */
+  --c3:         #8cc576;   /* brand green — matches main site */
   --c4:         #0e1a26;   /* page background */
   --c5:         #193247;
   --glass:      rgba(15, 37, 53, 0.55);
@@ -49,7 +49,7 @@ body,
 .md-typeset {
   font-family: var(--sh-body);
   font-size: 15px;
-  line-height: 1.7;
+  line-height: 1.65;
   color: var(--sh-text);
   background: var(--c4);
 }
@@ -67,19 +67,7 @@ body,
   line-height: 1.1;
 }
 
-.md-typeset h1 { font-size: 2.2em; }
-.md-typeset h2 { font-size: 1.6em; }
-.md-typeset h3 { font-size: 1.25em; }
-
-/* green gradient on h1 like the site hero */
-.md-typeset h1 span {
-  background: linear-gradient(135deg, #8cc576, #5bbf50, #c8e8b0);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-/* ── Animated background orbs ───────────────────────────────────── */
+/* ── Background orbs (3 orbs matching main site) ─────────────────── */
 body::before,
 body::after {
   content: '';
@@ -88,7 +76,7 @@ body::after {
   pointer-events: none;
   z-index: 0;
   filter: blur(80px);
-  opacity: 0.22;
+  opacity: 0.28;
 }
 body::before {
   width: 700px;
@@ -106,12 +94,29 @@ body::after {
   right: -150px;
   animation: sh-float2 18s ease-in-out infinite alternate;
 }
+/* Third orb via a pseudo on .md-container */
+.md-container::before {
+  content: '';
+  position: fixed;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 0;
+  filter: blur(80px);
+  opacity: 0.28;
+  width: 400px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(140, 197, 118, 0.3), transparent 70%);
+  top: 40px;
+  left: 40px;
+  animation: sh-float3 26s ease-in-out infinite alternate;
+}
 @keyframes sh-float1 { to { transform: translate(60px, 80px); } }
 @keyframes sh-float2 { to { transform: translate(-80px, -60px); } }
+@keyframes sh-float3 { to { transform: translate(40px, -40px); } }
 
 /* ── Header / nav bar ───────────────────────────────────────────── */
 .md-header {
-  background: rgba(14, 26, 38, 0.75);
+  background: rgba(14, 26, 38, 0.70);
   backdrop-filter: blur(24px) saturate(160%);
   -webkit-backdrop-filter: blur(24px) saturate(160%);
   border-bottom: 1px solid var(--border-hi);
@@ -234,6 +239,43 @@ body::after {
   max-width: 860px;
 }
 
+/* ── Headings ────────────────────────────────────────────────────── */
+.md-typeset h1 {
+  font-size: 2.4em;
+  font-weight: 800;
+  color: var(--c3);
+  text-shadow: 0 0 20px rgba(140,197,118,0.3);
+  letter-spacing: 0.04em;
+  margin-bottom: 0.15em;
+}
+
+/* green gradient span on h1 (hero style) */
+.md-typeset h1 span {
+  background: linear-gradient(135deg, #8cc576, #5bbf50, #c8e8b0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.md-typeset h2 {
+  font-size: 1.1em;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(140,197,118,0.75);
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.4em;
+  margin-top: 2em;
+}
+
+.md-typeset h3 {
+  font-size: 1.0em;
+  font-weight: 700;
+  color: #eaf4ec;
+  letter-spacing: 0.02em;
+  margin-top: 1.6em;
+}
+
 /* ── Tables ──────────────────────────────────────────────────────── */
 .md-typeset table:not([class]) {
   border: 1px solid var(--border);
@@ -297,11 +339,10 @@ body::after {
   font-size: 0.82em;
   line-height: 1.65;
 }
-/* Code copy button */
 .md-code__button { color: var(--sh-muted); }
 .md-code__button:hover { color: var(--c3); }
 
-/* Syntax highlight tokens to match green theme */
+/* Syntax highlight tokens */
 .highlight .k, .highlight .kd, .highlight .kn { color: #8cc576; }
 .highlight .s, .highlight .s2, .highlight .s1 { color: #c8e8b0; }
 .highlight .c, .highlight .c1, .highlight .cm { color: var(--sh-muted); font-style: italic; }
@@ -334,12 +375,11 @@ body::after {
 .md-typeset .admonition-title::before,
 .md-typeset summary::before { color: var(--c3) !important; }
 
-/* type-specific accent colours */
-.md-typeset .admonition.note   { border-left-color: var(--c3); }
+.md-typeset .admonition.note    { border-left-color: var(--c3); }
 .md-typeset .admonition.warning { border-left-color: #f5a623; }
 .md-typeset .admonition.danger  { border-left-color: #ff6b6b; }
-.md-typeset .admonition.tip    { border-left-color: #5bbf50; }
-.md-typeset .admonition.info   { border-left-color: #5badde; }
+.md-typeset .admonition.tip     { border-left-color: #5bbf50; }
+.md-typeset .admonition.info    { border-left-color: #5badde; }
 
 /* ── Horizontal rule ──────────────────────────────────────────────── */
 .md-typeset hr {
@@ -405,7 +445,7 @@ body::after {
 
 /* ── Footer ───────────────────────────────────────────────────────── */
 .md-footer {
-  background: rgba(14,26,38,0.9);
+  background: rgba(14,26,38,0.8);
   border-top: 1px solid var(--border);
   backdrop-filter: blur(20px);
   font-family: var(--sh-body);
@@ -497,12 +537,12 @@ body::after {
               0 12px 40px rgba(0,0,0,0.4);
 }
 
-/* ── Status pills (for airport/atc status labels) ─────────────────── */
+/* ── Status pills ─────────────────────────────────────────────────── */
 .sh-pill {
   display: inline-block;
   font-size: 10.5px;
   font-weight: 700;
-  padding: 2px 10px;
+  padding: 2px 9px;
   border-radius: 999px;
   background: rgba(140,197,118,0.12);
   border: 1px solid rgba(140,197,118,0.22);
@@ -521,35 +561,10 @@ body::after {
   border-color: rgba(245,166,35,0.35);
   color: #f5a623;
 }
-
-/* ── Airport ICAO heading style ──────────────────────────────────── */
-.md-typeset h1 {
-  font-size: 2.4em;
-  font-weight: 800;
-  color: var(--c3);
-  text-shadow: 0 0 20px rgba(140,197,118,0.3);
-  letter-spacing: 0.04em;
-  margin-bottom: 0.15em;
-}
-
-/* Section divider label (like "ATC FREQUENCIES") */
-.md-typeset h2 {
-  font-size: 1.1em;
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: rgba(140,197,118,0.75);
-  border-bottom: 1px solid var(--border);
-  padding-bottom: 0.4em;
-  margin-top: 2em;
-}
-
-.md-typeset h3 {
-  font-size: 1.0em;
-  font-weight: 700;
-  color: #eaf4ec;
-  letter-spacing: 0.02em;
-  margin-top: 1.6em;
+.sh-pill.muted {
+  background: rgba(106,154,126,0.1);
+  border-color: rgba(106,154,126,0.2);
+  color: var(--sh-muted);
 }
 
 /* ── Keyboard key ────────────────────────────────────────────────── */
@@ -564,7 +579,7 @@ body::after {
   box-shadow: 0 2px 0 var(--border-hi);
 }
 
-/* ── Badges on content nav (section index cards) ─────────────────── */
+/* ── Grid cards (section index) ───────────────────────────────────── */
 .md-typeset .grid.cards > :is(ul,ol) > li,
 .md-typeset .grid > .card {
   background: rgba(15,37,53,0.55);
