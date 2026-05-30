@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block header %}
+<nav class="sh-nav">
+  <a href="https://skyhighnetwork.co.uk" class="sh-nav-logo" target="_blank" rel="noopener">
+    <div class="sh-nav-logo-badge">
+      <img src="{{ config.site_url }}assets/android-chrome-512x512.png" width="36" alt="SkyHigh logo">
+    </div>
+    <div>
+      <div class="sh-nav-logo-text">SkyHigh Network</div>
+      <div class="sh-nav-logo-sub">Wiki &amp; Documentation</div>
+    </div>
+  </a>
+
+  <ul class="sh-nav-links">
+    <li><a href="https://skyhighnetwork.co.uk" target="_blank" rel="noopener">Home</a></li>
+    <li><a href="https://skyhighnetwork.co.uk/events.html" target="_blank" rel="noopener">Events</a></li>
+    <li><a href="{{ config.site_url }}pilots/getting-started/" class="{% if page and 'pilots' in page.url %}sh-active{% endif %}">Pilots</a></li>
+    <li><a href="{{ config.site_url }}controllers/getting-started/" class="{% if page and 'controllers' in page.url %}sh-active{% endif %}">Controllers</a></li>
+    <li><a href="{{ config.site_url }}airports/" class="{% if page and 'airports' in page.url %}sh-active{% endif %}">Airports</a></li>
+    <li><a href="{{ config.site_url }}network/" class="{% if page and 'network' in page.url %}sh-active{% endif %}">Rules</a></li>
+  </ul>
+
+  <!-- Search (Material built-in) -->
+  <div class="sh-nav-search">
+    {% include "partials/search.html" %}
+  </div>
+
+  <a href="https://skyhighnetwork.co.uk/join.html" class="sh-nav-cta" target="_blank" rel="noopener">Join</a>
+
+  <!-- Mobile hamburger (Material built-in) -->
+  <label class="md-header__button md-icon sh-nav-hamburger" for="__drawer">
+    {% include ".icons/material/menu.svg" %}
+  </label>
+</nav>
+
+<!-- Keep Material's drawer / search overlay working -->
+{{ super() }}
+{% endblock %}
