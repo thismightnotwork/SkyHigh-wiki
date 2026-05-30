@@ -6,7 +6,7 @@ Built with [MkDocs](https://mkdocs.org) + [Material for MkDocs](https://squidfun
 
 ## Live site
 
-Once GitHub Pages is enabled: `https://thismightnotwork.github.io/SkyHigh-wiki`
+Once GitHub Pages is enabled: `[https://thismightnotwork.github.io/SkyHigh-wiki](https://wiki.skyhighnetwork.co.uk/)`
 
 ## Local development
 
