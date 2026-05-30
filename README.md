@@ -10,15 +10,6 @@ Built with [MkDocs](https://mkdocs.org) + [Material for MkDocs](https://squidfun
 https://wiki.skyhighnetwork.co.uk/
 ```
 
-## Local development
-
-```bash
-pip install mkdocs-material
-mkdocs serve
-```
-
-Then open `http://127.0.0.1:8000`.
-
 ## Contributing
 
 1. Edit the relevant `.md` file inside `docs/`.
