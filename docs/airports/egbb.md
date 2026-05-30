@@ -1,62 +1,95 @@
 # EGBB — Birmingham
 
-> **Source:** [UK AIP AD 2.EGBB](https://www.aurora.nats.co.uk/htmlAIP/Publications/2019-01-03-AIRAC/html/eAIP/EG-AD-2.EGBB-en-GB.html) (NATS 2019 AIRAC)
+## General Information
 
-## Aerodrome Information
-
-| Field | Details |
+| Field | Detail |
 |---|---|
 | **ICAO** | EGBB |
 | **Name** | Birmingham |
-| **ARP** | 522714N 0014453W |
-| **Elevation** | 339 FT |
-| **Reference Temperature** | 18 °C |
-| **Magnetic Variation** | 0.83°W (2019) |
+| **Location** | 5.5 NM ESE of Birmingham |
+| **Elevation** | 339 FT AMSL |
+| **ARP** | 522714N 0014453W (intersection of runway with TWYs Lima/Tango) |
+| **Operator** | Birmingham Airport |
 | **Traffic** | IFR / VFR |
-| **Admin** | Birmingham Airport |
 | **Hours** | H24 |
+| **Transition Altitude** | 6,000 FT |
+| **Magnetic Variation** | 0.72°E (2027) |
+| **Reference Temperature** | 18°C |
+
+---
 
 ## Runways
 
-| Designator | Dimensions | Surface | PCN | ILS Cat |
+| Designator | True Bearing | Dimensions | Surface | THR Elevation |
 |---|---|---|---|---|
-| 15 | 3052 × 45 M | Asphalt, Grooved | 65/F/B/W/T | CAT III |
-| 33 | 3052 × 45 M | Asphalt, Grooved | 65/F/B/W/T | CAT III |
+| 15 | 148.2° | 3052 × 45 M | Asphalt, Grooved | 322 FT |
+| 33 | 328.2° | 3052 × 45 M | Asphalt, Grooved | 340 FT |
 
-### Declared Distances
+---
+
+## Declared Distances
 
 | RWY | TORA | TODA | ASDA | LDA |
 |---|---|---|---|---|
-| 15 | 3003 M | 3063 M | 3003 M | 2580 M |
-| 33 | 3003 M | 3196 M | 3003 M | 2449 M |
+| 15 | 3052 M | 3052 M | 3052 M | 3052 M |
+| 33 | 3052 M | 3202 M | 3052 M | 2903 M |
+
+---
+
+## Approach & Runway Lighting
+
+| RWY | ALS | PAPI | TDZ |
+|---|---|---|---|
+| 15 | Coded CL + 5 crossbars + 300 M suppl. / 900 M / HI | PAPI Left 3° | 900 M |
+| 33 | Coded CL + 5 crossbars + 300 M suppl. / 900 M / HI | PAPI Left 3° | 900 M |
+
+---
 
 ## ATC Frequencies
 
-| Service | Callsign | Frequency |
-|---|---|---|
-| Delivery | BIRMINGHAM DELIVERY | 121.930 MHz |
-| Ground | BIRMINGHAM GROUND | 121.805 MHz |
-| Tower | BIRMINGHAM TOWER | 118.305 MHz |
-| Approach | BIRMINGHAM APPROACH | 123.980 MHz |
-| Radar | BIRMINGHAM RADAR | 123.980 MHz |
-| Director | BIRMINGHAM DIRECTOR | 131.005 MHz |
-| ATIS | BIRMINGHAM INFORMATION | 136.030 MHz |
-
-## Navaids
-
-| Type | Ident | Frequency | Runway |
+| Service | Callsign | Frequency | Hours |
 |---|---|---|---|
-| ILS/LLZ CAT III | IBIR | 110.100 MHz | RWY 15 |
-| ILS/LLZ CAT III | IBM | 110.100 MHz | RWY 33 |
-| DME | IBIR / IBM | 38X (110.100 MHz) | Both (zero at THR) |
-| NDB | BHX | 406.000 kHz | — |
+| Clearance Delivery | BIRMINGHAM DELIVERY | 121.930 | As published |
+| Ground | BIRMINGHAM GROUND | 121.805 | H24 |
+| Tower | BIRMINGHAM TOWER | 118.305 | H24 |
+| Approach | BIRMINGHAM APPROACH | 118.055 / 131.005 | H24 |
+| Approach (Director) | BIRMINGHAM DIRECTOR | 118.055 | As directed |
+| ATIS | BIRMINGHAM INFORMATION | 126.280 | H24 |
 
-## Local Notes
+---
 
-- **Preferential runway:** RWY 33 preferred when surface is dry and mean wind ≤5 kt from RWY 33 anemometer.
-- CAT II/III holding points: A2, AL1, S2, E1, F1.
-- A380 operations are permitted (max 3 simultaneous; only one moving at a time). A340-600 is **not** accepted.
-- Stop bars at all runway entrances are active H24.
-- Taxiway D between D4–D5 is restricted to aircraft with max wingspan of 42 M.
-- FEGP must be used whenever available; APU must be shut down immediately on stand arrival.
-- Slots for all commercial air transport movements must be coordinated with [ACL](mailto:lonacxh@acl-uk.org).
+## Radio Navigation Aids
+
+| Type | Ident | Frequency | Runway | Notes |
+|---|---|---|---|---|
+| ILS CAT III / LOC | IOM | 110.500 MHz | 15 | |
+| ILS CAT III / LOC | IBB | 111.350 MHz | 33 | |
+| VOR/DME | BHX | 113.750 MHz | — | DOC as published |
+| NDB | BHX | 356.500 kHz | — | |
+
+---
+
+## Airspace
+
+| Designation | Class | Vertical Limits |
+|---|---|---|
+| Birmingham CTR | D | SFC – 2500 FT ALT |
+| Birmingham ATZ | D | SFC – 2339 FT ALT (2000 FT AAL) |
+
+ATZ: 2.5 NM radius centred ARP.
+
+---
+
+## Local Regulations
+
+- All flights subject to **PPR**. Filing a flight plan does NOT constitute permission to use Birmingham.
+- Departing aircraft must state **type, stand number and ATIS letter** on first contact with Delivery/Ground.
+- **CAT II/III** approved on both runway ends (15 and 33).
+- All stands nose-in push-back. Fixed Electrical Ground Power to be used where available.
+- **DCL** available for suitably equipped aircraft.
+- A nominated ground handling agent is mandatory for all visiting aircraft.
+- **RFF Category A9** (upgraded on request via prior arrangement).
+
+---
+
+> **Data Source:** UK AIP (NATS Aurora), AIRAC effective 2026-06-11. Always verify against current official publications before operations.
