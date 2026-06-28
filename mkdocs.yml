@@ -49,12 +49,77 @@ nav:
     - ATC Ratings: controllers/ratings.md
   - Airports:
     - Overview: airports/index.md
-    - EGLL - London Heathrow: airports/egll.md
-    - EGKK - London Gatwick: airports/egkk.md
-    - EGCC - Manchester: airports/egcc.md
-    - EGBB - Birmingham: airports/egbb.md
-    - EGPH - Edinburgh: airports/egph.md
-    - EGPF - Glasgow: airports/egpf.md
+    # -------------------------------------------------------
+    # SkyHigh Europe
+    # -------------------------------------------------------
+    - Europe:
+      - UK & Ireland (EGTT / EGPX / EGGX / EISN):
+        - Division Overview: airports/europe/uk-ireland/index.md
+        - EGLL - London Heathrow: airports/egll.md
+        - EGKK - London Gatwick: airports/egkk.md
+        - EGSS - London Stansted: airports/europe/uk-ireland/egss.md
+        - EGCC - Manchester: airports/egcc.md
+        - EGBB - Birmingham: airports/egbb.md
+        - EGPH - Edinburgh: airports/egph.md
+        - EGPF - Glasgow: airports/egpf.md
+      - Netherlands (EHAA):
+        - Division Overview: airports/europe/netherlands/index.md
+      - Belgium (EBBU / ELLX):
+        - Division Overview: airports/europe/belgium/index.md
+      - Germany (EDWW / EDGG / EDMM):
+        - Division Overview: airports/europe/germany/index.md
+      - France (LFFE / LFRR / LFEE / LFBB):
+        - Division Overview: airports/europe/france/index.md
+      - Norway, Sweden & Finland (ENOR / ESAA / EFIN):
+        - Division Overview: airports/europe/scandinavia/index.md
+      - Estonia, Latvia & Lithuania (EETT / EVRR / EYVL):
+        - Division Overview: airports/europe/baltics/index.md
+      - Denmark (EKQK):
+        - Division Overview: airports/europe/denmark/index.md
+      - Poland (EPWW):
+        - Division Overview: airports/europe/poland/index.md
+      - Czechia (LKAA):
+        - Division Overview: airports/europe/czechia/index.md
+      - Slovakia (LZBB):
+        - Division Overview: airports/europe/slovakia/index.md
+      - Ukraine (UKBV / UKLV / UKOV):
+        - Division Overview: airports/europe/ukraine/index.md
+      - Hungary (LHCC):
+        - Division Overview: airports/europe/hungary/index.md
+      - Austria (LOVV):
+        - Division Overview: airports/europe/austria/index.md
+      - Switzerland (LSAS):
+        - Division Overview: airports/europe/switzerland/index.md
+      - Italy (LIMM / LIBB / LIRR):
+        - Division Overview: airports/europe/italy/index.md
+      - Spain (LECB / LECM):
+        - Division Overview: airports/europe/spain/index.md
+      - Greece (LGGG):
+        - Division Overview: airports/europe/greece/index.md
+      - Turkey Istanbul (LTBB):
+        - Division Overview: airports/europe/turkey-istanbul/index.md
+      - Turkey Ankara (LTAA):
+        - Division Overview: airports/europe/turkey-ankara/index.md
+    # -------------------------------------------------------
+    # SkyHigh North America
+    # -------------------------------------------------------
+    - North America:
+      - Division Overview: airports/north-america/index.md
+    # -------------------------------------------------------
+    # SkyHigh South America
+    # -------------------------------------------------------
+    - South America:
+      - Division Overview: airports/south-america/index.md
+    # -------------------------------------------------------
+    # SkyHigh Africa & Middle East
+    # -------------------------------------------------------
+    - Africa & Middle East:
+      - Division Overview: airports/africa-me/index.md
+    # -------------------------------------------------------
+    # SkyHigh Asia
+    # -------------------------------------------------------
+    - Asia:
+      - Division Overview: airports/asia/index.md
   - Network Rules:
     - Overview: network/index.md
     - General Rules: network/rules.md
