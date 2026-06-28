@@ -55,13 +55,20 @@ nav:
     - Europe:
       - UK & Ireland (EGTT / EGPX / EGGX / EISN):
         - Division Overview: airports/europe/uk-ireland/index.md
-        - EGLL - London Heathrow: airports/egll.md
-        - EGKK - London Gatwick: airports/egkk.md
+        - EGLL - London Heathrow: airports/europe/uk-ireland/egll.md
+        - EGKK - London Gatwick: airports/europe/uk-ireland/egkk.md
         - EGSS - London Stansted: airports/europe/uk-ireland/egss.md
-        - EGCC - Manchester: airports/egcc.md
-        - EGBB - Birmingham: airports/egbb.md
-        - EGPH - Edinburgh: airports/egph.md
-        - EGPF - Glasgow: airports/egpf.md
+        - EGGW - London Luton: airports/europe/uk-ireland/eggw.md
+        - EGLC - London City: airports/europe/uk-ireland/eglc.md
+        - EGCC - Manchester: airports/europe/uk-ireland/egcc.md
+        - EGBB - Birmingham: airports/europe/uk-ireland/egbb.md
+        - EGPH - Edinburgh: airports/europe/uk-ireland/egph.md
+        - EGPF - Glasgow: airports/europe/uk-ireland/egpf.md
+        - EGNT - Newcastle: airports/europe/uk-ireland/egnt.md
+        - EGNX - East Midlands: airports/europe/uk-ireland/egnx.md
+        - EGAA - Belfast International: airports/europe/uk-ireland/egaa.md
+        - EGFF - Cardiff: airports/europe/uk-ireland/egff.md
+        - EGHI - Southampton: airports/europe/uk-ireland/eghi.md
       - Netherlands (EHAA):
         - Division Overview: airports/europe/netherlands/index.md
       - Belgium (EBBU / ELLX):
